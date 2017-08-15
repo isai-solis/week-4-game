@@ -4,13 +4,83 @@ body {
     
 }
 
- 
+.collector {
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    background-color: #c97127;
+}
+
+.instructions {
+    width: 75%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    background-color: #fbe7cc;
+}
+
+.randomnumber {
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    background-color: #5cc87d;
+    float: left;
+}
+
+.winslosses {
+    width: 20%;
+    height: 70px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin: 5px;
+    text-align: left;
+    background-color: #4bfdfe;
+    float: left;
+}
+
+.gemsbox {
+    width: 20%;
+    height: auto;
+    margin: 5px;
+}
 
 .gems {
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     border-radius: 4px;
     padding: 5px;
-    width: 40px;
-    height: 40px;
-
+    width: 50px;
+    height: 50px;
 }
+
+#redGem, #blueGem, #yellowGem, #greenGem {
+    background-color: #fff;
+}
+
+.yourtotal {
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    background-color: #2da394;
+}
+
+.totalscore {
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+    background-color: #2da394;
+}
+

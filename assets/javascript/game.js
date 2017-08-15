@@ -1,4 +1,3 @@
-var startGame;
 var wins = 0;
 var gameWin;
 var losses = 0;
@@ -47,9 +46,9 @@ function randomNumber(){
 };
 function gameWin(){
     alert("You Win!");
-    wins++;
+    $("#wins").html("Wins: " + wins++);
     randNumber = randomNumber();
-    $("#randomNumber").text(randNumber);
+    $("#randomNumber").text("Your Random Number: " + randNumber);
     redGem = randRedGem();
     blueGem = randBlueGem();
     yellowGem = randYellowGem();
@@ -60,9 +59,9 @@ function gameWin(){
 }
 function gameLose(){
     alert("You Lose.");
-    losses++;
+    $("#losses").html("Losses: " + losses++);
     randNumber = randomNumber();
-    $("#randomNumber").text(randNumber);
+    $("#randomNumber").text("Your Random Number: " + randNumber);
     redGem = randRedGem();
     blueGem = randBlueGem();
     yellowGem = randYellowGem();
@@ -76,12 +75,12 @@ function gameLose(){
 $(window).on("load", function() {
     randomNumber();
     console.log(randNumber);
-    $("#randomNumber").text(randNumber);
+    $("#randomNumber").text("Your Random Number: " + randNumber);
     
-    $("#wins").text(wins);
+    $("#wins").text("Wins: " + wins);
     console.log(wins);
 
-    $("#losses").text(losses);
+    $("#losses").text("Losses: " + losses);
     console.log(losses);
 
     randRedGem();
